@@ -157,41 +157,34 @@ class linkedList:
 l = linkedList()
 n = int(input("Enter number of nodes you want to insert into list\n"))
 for i in range(n):
- k = int(input("Enter data\n"))
- l.createList(k)
+     k = int(input("Enter data\n"))
+     l.createList(k)
  
 l.displayList()
-while(True):
- print("\n\n1. Insert At Begin\n2. Insert At End\n3. Inser At Position")
- print("4. Display list\n5. Count List\n6. Delete at begin\n7. Delete at end")
- print("8. Delete at position\n9. Sort list\n10. Search list")
- print("11. Find minimum\n12. Find maximum\n13. Exit")
- op = int(input("\nChoos your option\n"))
- if(op==1):
- l.insertAtBegin()
- elif(op==2):
- l.insertAtEnd()
- elif(op==3):
- l.insertAtPosition()
- elif(op==4):
- l.displayList()
- elif(op==5):
- l.countList()
- elif(op==6):
- l.deleteAtBegin()
- elif(op==7):
- l.deleteAtEnd()
- elif(op==8):
- l.deleteAtPosition()
- elif(op==9):
- l.sortList()
- elif(op==10):
- l.searchList()
- elif(op==11):
- l.findMin()
- elif(op==12):
- l.findMax()
- elif(op==13):
- exit()
- else:
- print("Enter valid option\n"
+ while(True):
+     print("\n\n1. Insert At Begin\n2. Insert At End\n3. Inser At Position")
+     print("4. Display list\n5. Count List\n6. Delete at begin\n7. Delete at end")
+     print("8. Delete at position\n9. Sort list\n10.  Exit")
+     op = int(input("\nChoos your option\n"))
+     if(op==1):
+       l.insertAtBegin()
+     elif(op==2):
+       l.insertAtEnd()
+     elif(op==3):
+       l.insertAtPosition()
+     elif(op==4):
+       l.displayList()
+     elif(op==5):
+       l.countList()
+     elif(op==6):
+       l.deleteAtBegin()
+     elif(op==7):
+       l.deleteAtEnd()
+     elif(op==8):
+       l.deleteAtPosition()
+     elif(op==9):
+       l.sortList()
+     elif(op==10):
+       exit()
+     else:
+       print("Enter valid option\n")
