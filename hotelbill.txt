@@ -1,0 +1,3 @@
+customer nameniha
+contact number:123456789
+total bill:855
